@@ -7,13 +7,13 @@ title: 蚊子技术站
 subtitle: ''
 description: ''
 keywords:
-author: wenzizone
+author: 深夜的蚊子
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://blog.wenzizone.com
+url: https://www.wenzizone.com
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

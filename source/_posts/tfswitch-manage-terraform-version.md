@@ -19,7 +19,7 @@ tfswitch是一个命令行工具，用于切换和管理Terraform的不同版本
 1. 打开终端或命令行界面。
 2. 执行以下命令，使用brew安装tfswitch：
 
-   ```
+   ```bash
    brew install warrensbox/tap/tfswitch
    ```
 
@@ -31,13 +31,13 @@ tfswitch是一个命令行工具，用于切换和管理Terraform的不同版本
 2. 进入你的Terraform项目的根目录。
 3. 执行以下命令，列出可用的Terraform版本：
 
-   ```
+   ```bash
    tfswitch -l
    ```
 
 4. 选择你想要使用的版本，执行以下命令进行切换：
 
-   ```
+   ```bash
    tfswitch x.x.x
    ```
 
