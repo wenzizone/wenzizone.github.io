@@ -208,7 +208,7 @@ footer:
   owner:
     enable: true
     since: 2020
-  custom_text: <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备17069413号-2</a>
+  custom_text: <a href="https://beian.miit.gov.cn/" target="_blank">京ICP备17069413号-2</a> | 本网站由<a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral" target="_blank"><img src="/img/upyun_logo.png" style="position:relative;top:-2px" align="absmiddle" width="60px" height="30px"></a>提供CDN加速/云存储服务
   copyright: true # Copyright of theme and framework
 
 # aside (側邊欄)
