@@ -49,7 +49,7 @@
 
   <url>
     <loc>https://www.wenzizone.com/</loc>
-    <lastmod>2023-10-23</lastmod>
+    <lastmod>2023-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -57,28 +57,28 @@
   
   <url>
     <loc>https://www.wenzizone.com/tags/github/</loc>
-    <lastmod>2023-10-23</lastmod>
+    <lastmod>2023-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/tags/proxy/</loc>
-    <lastmod>2023-10-23</lastmod>
+    <lastmod>2023-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/tags/tfswitch/</loc>
-    <lastmod>2023-10-23</lastmod>
+    <lastmod>2023-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/tags/terraform/</loc>
-    <lastmod>2023-10-23</lastmod>
+    <lastmod>2023-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -87,7 +87,7 @@
   
   <url>
     <loc>https://www.wenzizone.com/categories/Devops/</loc>
-    <lastmod>2023-10-23</lastmod>
+    <lastmod>2023-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
