@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.wenzizone.com/2023/10/23/access-github-with-proxy/</loc>
+    <loc>https://www.wenzizone.com/202310/access-github-with-proxy/</loc>
     
     <lastmod>2023-10-23</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/2023/10/22/tfswitch-manage-terraform-version/</loc>
+    <loc>https://www.wenzizone.com/202310/tfswitch-manage-terraform-version/</loc>
     
     <lastmod>2023-10-22</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/2023/10/20/hello-world/</loc>
+    <loc>https://www.wenzizone.com/202310/hello-world/</loc>
     
     <lastmod>2023-10-20</lastmod>
     
@@ -49,7 +49,7 @@
 
   <url>
     <loc>https://www.wenzizone.com/</loc>
-    <lastmod>2023-10-24</lastmod>
+    <lastmod>2023-10-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -57,28 +57,28 @@
   
   <url>
     <loc>https://www.wenzizone.com/tags/github/</loc>
-    <lastmod>2023-10-24</lastmod>
+    <lastmod>2023-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/tags/proxy/</loc>
-    <lastmod>2023-10-24</lastmod>
+    <lastmod>2023-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/tags/tfswitch/</loc>
-    <lastmod>2023-10-24</lastmod>
+    <lastmod>2023-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/tags/terraform/</loc>
-    <lastmod>2023-10-24</lastmod>
+    <lastmod>2023-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -87,7 +87,7 @@
   
   <url>
     <loc>https://www.wenzizone.com/categories/Devops/</loc>
-    <lastmod>2023-10-24</lastmod>
+    <lastmod>2023-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
