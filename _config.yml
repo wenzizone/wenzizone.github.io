@@ -5,8 +5,8 @@
 # Site
 title: 蚊子技术站
 subtitle: ''
-description: ''
-keywords:
+description: '技术学习分享，主要围绕devops等相关技术。'
+keywords: ["devops", "kubernetes", "Golang", "Python", "Ansible", "Terraform", "CI/CD", "Jenkins"]
 author: 深夜的蚊子
 language: zh-CN
 timezone: 'Asia/Shanghai'
