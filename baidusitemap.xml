@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.wenzizone.com/202310/parse-json-from-post-request.html</loc>
+    <lastmod>2023-10-30</lastmod>
+  </url>
+  <url>
     <loc>https://www.wenzizone.com/202310/access-github-with-proxy.html</loc>
     <lastmod>2023-10-23</lastmod>
   </url>
