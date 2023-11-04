@@ -5,8 +5,8 @@
 # Site
 title: 蚊子技术站
 subtitle: ''
-description: ''
-keywords:
+description: '技术学习分享，主要围绕devops等相关技术。'
+keywords: ["devops", "kubernetes", "Golang", "Python", "Ansible", "Terraform", "CI/CD", "Jenkins"]
 author: 深夜的蚊子
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -14,11 +14,11 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://www.wenzizone.com
-permalink: :year/:month/:day/:title/
+permalink: :year:month/:title.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_html: false # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
