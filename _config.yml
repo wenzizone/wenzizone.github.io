@@ -115,6 +115,8 @@ deploy:
 
 nofollow:
   enable: true
+  exclude:
+    - wenzizone.com
 
 neat_enable: true
 neat_html:
