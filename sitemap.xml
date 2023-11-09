@@ -97,20 +97,6 @@
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/tags/golang/</loc>
-    <lastmod>2023-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/tags/json/</loc>
-    <lastmod>2023-11-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.wenzizone.com/tags/tfswitch/</loc>
     <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -119,6 +105,20 @@
   
   <url>
     <loc>https://www.wenzizone.com/tags/terraform/</loc>
+    <lastmod>2023-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/golang/</loc>
+    <lastmod>2023-11-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/json/</loc>
     <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
