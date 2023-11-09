@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.wenzizone.com/categories/index.html</loc>
+    
+    <lastmod>2023-11-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/index.html</loc>
+    
+    <lastmod>2023-11-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.wenzizone.com/202310/parse-json-from-post-request</loc>
     
     <lastmod>2023-10-30</lastmod>
@@ -58,7 +76,7 @@
 
   <url>
     <loc>https://www.wenzizone.com/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-11-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,42 +84,42 @@
   
   <url>
     <loc>https://www.wenzizone.com/tags/github/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/tags/proxy/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/tags/golang/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/tags/json/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/tags/tfswitch/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/tags/terraform/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -110,21 +128,21 @@
   
   <url>
     <loc>https://www.wenzizone.com/categories/Devops/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/categories/%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/categories/%E5%BC%80%E5%8F%91/Golang/</loc>
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
