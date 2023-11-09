@@ -35,7 +35,7 @@ code_word_wrap: true
 social:
   fab fa-github: https://github.com/wenzizone || Github || '#24292e'
   #fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
-  fas fa-book: https://www.jianshu.com/u/6684565983b6 || 简书 '#ea6f5a'
+  fas fa-book: https://www.jianshu.com/u/6684565983b6 || 简书 || '#ea6f5a'
 
 # Image (圖片設置)
 # --------------------------------------
