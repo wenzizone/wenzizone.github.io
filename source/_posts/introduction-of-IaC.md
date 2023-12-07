@@ -5,7 +5,7 @@ tags: [IaC]
 categories: ["Devops","IaC"]
 ---
 # 基础设施即代码简介
-基础设施即代码（IaC）是通过代码而非手动流程来管理和置备基础设施的方法。
+基础设施即代码（IaC[Infrastructure as Code]）是通过代码而非手动流程来管理和置备基础设施的方法。
 
 利用 IaC 我们可以创建包含基础设施规范的配置文件，从而便于编辑和分发配置。此外，它还可确保每次置备的环境都完全相同。通过对配置规范进行整理和记录，IaC 有助于实现配置管理，并避免发生未记录的临时配置更改。
 
@@ -70,3 +70,10 @@ IaC 会帮助您协调开发和运维工作，因为这两个团队可以使用�
 此外，您也无需分别维护具有独特配置（无法自动复制）的不同部署环境，从而确保了生产环境的一致性。
 
 DevOps 最佳实践也同样适用于 IaC 中的基础架构。在软件开发期间，基础架构可采用与应用相同的 CI/CD 管道，因此可以对基础架构代码应用相同的测试和版本控制。
+
+
+参考：
+- https://www.redhat.com/zh/topics/automation/what-is-infrastructure-as-code-iac
+- https://segmentfault.com/a/1190000043706689
+- https://aws.amazon.com/cn/what-is/iac/
+- https://learn.microsoft.com/zh-cn/devops/deliver/what-is-infrastructure-as-code
