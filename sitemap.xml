@@ -2,9 +2,45 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.wenzizone.com/categories/index.html</loc>
+    <loc>https://www.wenzizone.com/202312/introduction-of-IaC</loc>
     
-    <lastmod>2023-11-09</lastmod>
+    <lastmod>2023-12-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202312/install-game-with-dbi-on-mac</loc>
+    
+    <lastmod>2023-12-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202311/install-pyenv-on-mac</loc>
+    
+    <lastmod>2023-12-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202311/manage-python-virtual-environment-with-pyenv-virtualenv</loc>
+    
+    <lastmod>2023-12-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202311/flash-hiwifi-hc5761-official-firmware</loc>
+    
+    <lastmod>2023-12-03</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,16 +49,7 @@
   <url>
     <loc>https://www.wenzizone.com/tags/index.html</loc>
     
-    <lastmod>2023-11-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/202310/parse-json-from-post-request</loc>
-    
-    <lastmod>2023-10-30</lastmod>
+    <lastmod>2023-11-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -31,16 +58,25 @@
   <url>
     <loc>https://www.wenzizone.com/202310/access-github-with-proxy</loc>
     
-    <lastmod>2023-10-23</lastmod>
+    <lastmod>2023-11-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/404</loc>
+    <loc>https://www.wenzizone.com/202311/hello-world</loc>
     
-    <lastmod>2023-10-22</lastmod>
+    <lastmod>2023-11-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202310/parse-json-from-post-request</loc>
+    
+    <lastmod>2023-11-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,7 +85,7 @@
   <url>
     <loc>https://www.wenzizone.com/202310/tfswitch-manage-terraform-version</loc>
     
-    <lastmod>2023-10-22</lastmod>
+    <lastmod>2023-11-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -58,16 +94,25 @@
   <url>
     <loc>https://www.wenzizone.com/about/index.html</loc>
     
-    <lastmod>2023-10-22</lastmod>
+    <lastmod>2023-11-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/202310/hello-world</loc>
+    <loc>https://www.wenzizone.com/categories/index.html</loc>
     
-    <lastmod>2023-10-20</lastmod>
+    <lastmod>2023-11-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/404</loc>
+    
+    <lastmod>2023-11-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -76,7 +121,7 @@
 
   <url>
     <loc>https://www.wenzizone.com/</loc>
-    <lastmod>2023-11-09</lastmod>
+    <lastmod>2024-01-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -84,42 +129,119 @@
   
   <url>
     <loc>https://www.wenzizone.com/tags/github/</loc>
-    <lastmod>2023-11-09</lastmod>
+    <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/tags/proxy/</loc>
-    <lastmod>2023-11-09</lastmod>
+    <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/tags/tfswitch/</loc>
-    <lastmod>2023-11-09</lastmod>
+    <loc>https://www.wenzizone.com/tags/openwrt/</loc>
+    <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/tags/terraform/</loc>
-    <lastmod>2023-11-09</lastmod>
+    <loc>https://www.wenzizone.com/tags/%E6%9E%81%E8%B7%AF%E7%94%B1/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/hc5761/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/switch/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/mac/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/dbi/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/pyenv/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/brew/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/virtualenv/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/pyenv-virtualenv/</loc>
+    <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/tags/golang/</loc>
-    <lastmod>2023-11-09</lastmod>
+    <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/tags/json/</loc>
-    <lastmod>2023-11-09</lastmod>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/IaC/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/tfswitch/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/terraform/</loc>
+    <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -128,21 +250,49 @@
   
   <url>
     <loc>https://www.wenzizone.com/categories/Devops/</loc>
-    <lastmod>2023-11-09</lastmod>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/categories/%E6%B8%B8%E6%88%8F/</loc>
+    <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/categories/%E5%BC%80%E5%8F%91/</loc>
-    <lastmod>2023-11-09</lastmod>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/categories/Devops/IaC/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/categories/%E6%B8%B8%E6%88%8F/switch/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/categories/%E5%BC%80%E5%8F%91/python/</loc>
+    <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.wenzizone.com/categories/%E5%BC%80%E5%8F%91/Golang/</loc>
-    <lastmod>2023-11-09</lastmod>
+    <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
