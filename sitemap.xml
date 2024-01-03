@@ -4,7 +4,7 @@
   <url>
     <loc>https://www.wenzizone.com/202312/introduction-of-IaC</loc>
     
-    <lastmod>2023-12-06</lastmod>
+    <lastmod>2024-01-03</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/about/index.html</loc>
+    <loc>https://www.wenzizone.com/categories/index.html</loc>
     
     <lastmod>2023-11-12</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/categories/index.html</loc>
+    <loc>https://www.wenzizone.com/about/index.html</loc>
     
     <lastmod>2023-11-12</lastmod>
     
@@ -184,6 +184,13 @@
   </url>
   
   <url>
+    <loc>https://www.wenzizone.com/tags/IaC/</loc>
+    <lastmod>2024-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.wenzizone.com/tags/pyenv/</loc>
     <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -226,13 +233,6 @@
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/tags/IaC/</loc>
-    <lastmod>2024-01-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.wenzizone.com/tags/tfswitch/</loc>
     <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -263,14 +263,14 @@
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/categories/%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://www.wenzizone.com/categories/Devops/IaC/</loc>
     <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/categories/Devops/IaC/</loc>
+    <loc>https://www.wenzizone.com/categories/%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2024-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
