@@ -1,39 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.wenzizone.com/202312/introduction-of-IaC.html</loc>
-    <lastmod>2024-01-03</lastmod>
-  </url>
-  <url>
-    <loc>https://www.wenzizone.com/202312/install-game-with-dbi-on-mac.html</loc>
-    <lastmod>2023-12-06</lastmod>
-  </url>
-  <url>
-    <loc>https://www.wenzizone.com/202311/install-pyenv-on-mac.html</loc>
-    <lastmod>2023-12-03</lastmod>
+    <loc>https://www.wenzizone.com/202505/build-multiple-platform-docker-image-on-mac-m2.html</loc>
+    <lastmod>2025-05-06</lastmod>
   </url>
   <url>
     <loc>https://www.wenzizone.com/202311/manage-python-virtual-environment-with-pyenv-virtualenv.html</loc>
-    <lastmod>2023-12-03</lastmod>
-  </url>
-  <url>
-    <loc>https://www.wenzizone.com/202311/flash-hiwifi-hc5761-official-firmware.html</loc>
-    <lastmod>2023-12-03</lastmod>
-  </url>
-  <url>
-    <loc>https://www.wenzizone.com/202310/access-github-with-proxy.html</loc>
-    <lastmod>2023-11-12</lastmod>
-  </url>
-  <url>
-    <loc>https://www.wenzizone.com/202311/hello-world.html</loc>
-    <lastmod>2023-11-12</lastmod>
+    <lastmod>2025-05-06</lastmod>
   </url>
   <url>
     <loc>https://www.wenzizone.com/202310/parse-json-from-post-request.html</loc>
-    <lastmod>2023-11-12</lastmod>
+    <lastmod>2025-05-06</lastmod>
   </url>
   <url>
     <loc>https://www.wenzizone.com/202310/tfswitch-manage-terraform-version.html</loc>
-    <lastmod>2023-11-12</lastmod>
+    <lastmod>2025-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wenzizone.com/202402/use-external-dns-in-k8s.html</loc>
+    <lastmod>2025-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wenzizone.com/202311/install-pyenv-on-mac.html</loc>
+    <lastmod>2025-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wenzizone.com/202312/introduction-of-IaC.html</loc>
+    <lastmod>2025-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wenzizone.com/202401/flash-openwrt-hiwifi-hc5761.html</loc>
+    <lastmod>2025-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wenzizone.com/202312/install-game-with-dbi-on-mac.html</loc>
+    <lastmod>2025-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wenzizone.com/202311/flash-hiwifi-hc5761-official-firmware.html</loc>
+    <lastmod>2025-05-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wenzizone.com/202310/access-github-with-proxy.html</loc>
+    <lastmod>2025-05-06</lastmod>
   </url>
 </urlset> 
