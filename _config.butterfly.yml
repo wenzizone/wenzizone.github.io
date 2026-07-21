@@ -814,11 +814,17 @@ abcjs:
 # mermaid
 # see https://github.com/mermaid-js/mermaid
 mermaid:
-  enable: false
+  enable: true
+  # Write Mermaid diagrams using code blocks
+  code_write: true
   # built-in themes: default/forest/dark/neutral
   theme:
     light: default
     dark: dark
+  # Enable "Open in New Tab" button to view diagram in a separate window
+  open_in_new_tab: true
+  # Enable zoom and pan interactions on diagrams
+  zoom_pan: true
 
 # Note (Bootstrap Callout)
 note:
