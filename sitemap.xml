@@ -13,7 +13,106 @@
   <url>
     <loc>https://www.wenzizone.com/202607/migrate-oke-flannel-to-cilium-with-argocd</loc>
     
-    <lastmod>2026-07-21</lastmod>
+    <lastmod>2026-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202402/use-external-dns-in-k8s</loc>
+    
+    <lastmod>2026-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202310/tfswitch-manage-terraform-version</loc>
+    
+    <lastmod>2026-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202310/parse-json-from-post-request</loc>
+    
+    <lastmod>2026-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202311/manage-python-virtual-environment-with-pyenv-virtualenv</loc>
+    
+    <lastmod>2026-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202312/introduction-of-IaC</loc>
+    
+    <lastmod>2026-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202311/install-pyenv-on-mac</loc>
+    
+    <lastmod>2026-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202312/install-game-with-dbi-on-mac</loc>
+    
+    <lastmod>2026-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202401/flash-openwrt-hiwifi-hc5761</loc>
+    
+    <lastmod>2026-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202311/flash-hiwifi-hc5761-official-firmware</loc>
+    
+    <lastmod>2026-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202505/build-multiple-platform-docker-image-on-mac-m2</loc>
+    
+    <lastmod>2026-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/202310/access-github-with-proxy</loc>
+    
+    <lastmod>2026-07-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -21,15 +120,6 @@
   
   <url>
     <loc>https://www.wenzizone.com/tags/index.html</loc>
-    
-    <lastmod>2026-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/about/index.html</loc>
     
     <lastmod>2026-07-21</lastmod>
     
@@ -47,97 +137,7 @@
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/202311/install-pyenv-on-mac</loc>
-    
-    <lastmod>2026-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/202311/manage-python-virtual-environment-with-pyenv-virtualenv</loc>
-    
-    <lastmod>2026-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/202312/introduction-of-IaC</loc>
-    
-    <lastmod>2026-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/202310/tfswitch-manage-terraform-version</loc>
-    
-    <lastmod>2026-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/202310/parse-json-from-post-request</loc>
-    
-    <lastmod>2026-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/202402/use-external-dns-in-k8s</loc>
-    
-    <lastmod>2026-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/202310/access-github-with-proxy</loc>
-    
-    <lastmod>2026-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/202505/build-multiple-platform-docker-image-on-mac-m2</loc>
-    
-    <lastmod>2026-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/202311/flash-hiwifi-hc5761-official-firmware</loc>
-    
-    <lastmod>2026-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/202401/flash-openwrt-hiwifi-hc5761</loc>
-    
-    <lastmod>2026-07-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/202312/install-game-with-dbi-on-mac</loc>
+    <loc>https://www.wenzizone.com/about/index.html</loc>
     
     <lastmod>2026-07-21</lastmod>
     
@@ -164,41 +164,6 @@
 
   
   <url>
-    <loc>https://www.wenzizone.com/tags/github/</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/tags/proxy/</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/tags/docker/</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/tags/macbook-m2/</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/tags/%E5%A4%9A%E6%9E%B6%E6%9E%84/</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.wenzizone.com/tags/openwrt/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -220,7 +185,7 @@
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/tags/pyenv/</loc>
+    <loc>https://www.wenzizone.com/tags/switch/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -234,6 +199,20 @@
   </url>
   
   <url>
+    <loc>https://www.wenzizone.com/tags/dbi/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/pyenv/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.wenzizone.com/tags/brew/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -241,14 +220,7 @@
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/tags/switch/</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/tags/dbi/</loc>
+    <loc>https://www.wenzizone.com/tags/IaC/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -263,13 +235,6 @@
   
   <url>
     <loc>https://www.wenzizone.com/tags/pyenv-virtualenv/</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/tags/IaC/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -318,6 +283,41 @@
   </url>
   
   <url>
+    <loc>https://www.wenzizone.com/tags/docker/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/macbook-m2/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/%E5%A4%9A%E6%9E%B6%E6%9E%84/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/golang/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/tags/json/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.wenzizone.com/tags/tfswitch/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -346,20 +346,6 @@
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/tags/golang/</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/tags/json/</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.wenzizone.com/tags/external-dns/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -380,17 +366,24 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>https://www.wenzizone.com/categories/Devops/</loc>
+    <loc>https://www.wenzizone.com/tags/github/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.wenzizone.com/categories/%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://www.wenzizone.com/tags/proxy/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>https://www.wenzizone.com/categories/Devops/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -404,7 +397,21 @@
   </url>
   
   <url>
+    <loc>https://www.wenzizone.com/categories/%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.wenzizone.com/categories/Devops/IaC/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wenzizone.com/categories/%E6%B8%B8%E6%88%8F/switch/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -419,13 +426,6 @@
   
   <url>
     <loc>https://www.wenzizone.com/categories/%E5%BC%80%E5%8F%91/Golang/</loc>
-    <lastmod>2026-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wenzizone.com/categories/%E6%B8%B8%E6%88%8F/switch/</loc>
     <lastmod>2026-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

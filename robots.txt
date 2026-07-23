@@ -8,4 +8,4 @@ Disallow: /vendors/
 Disallow: /fonts/
 Disallow: /fancybox/
 Sitemap: https://www.wenzizone.com/sitemap.xml
-Sitemap: https://www.wenzizone.com/baidu_sitemap.xml
+Sitemap: https://www.wenzizone.com/baidusitemap.xml
