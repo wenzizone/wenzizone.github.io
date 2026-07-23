@@ -1,6 +1,6 @@
 ---
 title: 从 Cluster Autoscaler 到 Karpenter：OKE 节点弹性伸缩的 ArgoCD 实践
-date: 2026-07-22 15:04:42
+date: 2026-07-23 10:07:27
 tags: [karpenter, oci, oke, kubernetes, argocd, gitops, terraform]
 categories: Devops
 cover: /images/karpenter/run-karpenter-on-oke-with-argocd.png
