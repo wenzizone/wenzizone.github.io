@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.wenzizone.com/202401/flash-openwrt-hiwifi-hc5761.html</loc>
+    <lastmod>2026-07-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wenzizone.com/202311/flash-hiwifi-hc5761-official-firmware.html</loc>
+    <lastmod>2026-07-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wenzizone.com/202311/install-pyenv-on-mac.html</loc>
+    <lastmod>2026-07-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wenzizone.com/202312/introduction-of-IaC.html</loc>
+    <lastmod>2026-07-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.wenzizone.com/202312/install-game-with-dbi-on-mac.html</loc>
+    <lastmod>2026-07-23</lastmod>
+  </url>
+  <url>
     <loc>https://www.wenzizone.com/202607/run-karpenter-on-oke-with-argocd.html</loc>
     <lastmod>2026-07-23</lastmod>
   </url>
@@ -22,26 +42,6 @@
   </url>
   <url>
     <loc>https://www.wenzizone.com/202311/manage-python-virtual-environment-with-pyenv-virtualenv.html</loc>
-    <lastmod>2026-07-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.wenzizone.com/202312/introduction-of-IaC.html</loc>
-    <lastmod>2026-07-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.wenzizone.com/202311/install-pyenv-on-mac.html</loc>
-    <lastmod>2026-07-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.wenzizone.com/202312/install-game-with-dbi-on-mac.html</loc>
-    <lastmod>2026-07-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.wenzizone.com/202401/flash-openwrt-hiwifi-hc5761.html</loc>
-    <lastmod>2026-07-23</lastmod>
-  </url>
-  <url>
-    <loc>https://www.wenzizone.com/202311/flash-hiwifi-hc5761-official-firmware.html</loc>
     <lastmod>2026-07-23</lastmod>
   </url>
   <url>
