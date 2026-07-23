@@ -99,6 +99,8 @@ ignore:
 ## sitemap
 sitemap:
   path: sitemap.xml
+  tags: false
+  categories: false
 baidusitemap:
   path: baidusitemap.xml
 
