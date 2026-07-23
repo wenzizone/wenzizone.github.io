@@ -3,6 +3,7 @@ title: 使用pyenv-virtualenv管理python虚拟环境
 date: 2023-11-30 14:59:49
 tags: [pyenv, virtualenv, pyenv-virtualenv]
 categories: ["开发","python"]
+description: '介绍如何用 pyenv-virtualenv 插件为不同 Python 项目创建独立虚拟环境，避免全局安装 Python 包时出现的版本冲突问题。'
 ---
 pyenv-virtualenv 是一个用于管理 Python 版本和虚拟环境的工具。通过 pyenv-virtualenv，您可以轻松地创建和管理多个 Python 版本，并为每个版本创建独立的虚拟环境。
 

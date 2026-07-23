@@ -3,6 +3,7 @@ title: 在mac上使用DBI安装游戏
 date: 2023-12-05 20:47:23
 tags: [switch, mac, dbi]
 categories: ["游戏","switch"]
+description: '介绍在 Mac 上不装虚拟机，通过安卓传输助手或 Commander One Pro 连接 DBI，给 Nintendo Switch 安装游戏的具体操作步骤。'
 ---
 博主因为工作的缘故，已经使用mac电脑7~8年了。要说有些工具，确实有windows会方便不少。但并不代表mac就做不了。
 就比如给Switch安装游戏来说。mac依然可以胜任  

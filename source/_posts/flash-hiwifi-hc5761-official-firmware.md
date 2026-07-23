@@ -3,6 +3,7 @@ title: 极路由hc5761刷openwrt 之 刷原厂固件
 date: 2023-11-29 14:00:00
 tags: [openwrt, 极路由, hc5761]
 categories: Devops
+description: '记录极路由 HiWiFi HC5761 刷回官方原厂固件的过程，解决插件市场失效后无法通过常规方法开启 SSH 的问题。'
 ---
 博主手中有一台老物件，极路由Hiwifi HC5761，奔着物尽其用的原则。就想着拿它来刷个openwrt做一个旁路网关，网上搜索了一番，刷openwrt共分成以下几个步骤。
 1. root路由器，开启SSH

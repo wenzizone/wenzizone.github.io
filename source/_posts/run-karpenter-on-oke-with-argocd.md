@@ -4,6 +4,7 @@ date: 2026-07-23 10:07:27
 tags: [karpenter, oci, oke, kubernetes, argocd, gitops, terraform]
 categories: Devops
 cover: /images/karpenter/run-karpenter-on-oke-with-argocd.png
+description: '记录把 Karpenter Provider OCI 接入 ArgoCD、替代 Cluster Autoscaler 管理 OKE 节点弹性伸缩的实践，包含 IAM 权限设计和踩过的坑。'
 ---
 
 [Karpenter Provider for OCI](https://github.com/oracle/karpenter-provider-oci)（下面简称 KPO）是 Oracle 官方维护的、把 [Karpenter](https://karpenter.sh/) 这套"按 Pod 需求直接算节点"的弹性伸缩方案移植到 OKE 上的实现。它是什么、`NodePool`/`OCINodeClass` 这两个 CRD 怎么设计的，[官方 GitHub](https://github.com/oracle/karpenter-provider-oci) 和 [Oracle 文档](https://docs.oracle.com/en-us/iaas/Content/ContEng/Tasks/conteng-kpo.htm) 已经写得很全了。这篇文章记录的是另一件事：**我们把 KPO 接进 ArgoCD 之后，为什么又在它前面自己包了一层 Terraform + Helm，以及这一路踩过的几个坑**。

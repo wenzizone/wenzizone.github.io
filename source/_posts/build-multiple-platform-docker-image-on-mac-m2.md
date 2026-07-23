@@ -3,6 +3,7 @@ title: 在MacBook M2上构建多架构Docker镜像
 date: 2025-05-06 22:00:10
 tags: [docker, macbook m2, 多架构]
 categories: Devops
+description: '在搭载 Apple Silicon 的 MacBook M2 上，使用 Docker Buildx 构建同时支持 arm64 和 amd64 的多架构镜像，并推送到镜像仓库。'
 ---
 
 在最新的MacBook M2笔记本上，你可能希望构建能够在多种架构上运行的Docker镜像。由于M2芯片基于ARM架构，这为我们提供了一个理想的环境来构建和测试多平台镜像。以下是在MacBook M2上构建多架构Docker镜像的步骤。

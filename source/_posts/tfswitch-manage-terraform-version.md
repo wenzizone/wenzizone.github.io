@@ -3,6 +3,7 @@ title: 使用tfswitch管理terraform版本
 date: 2023-10-22 17:24:17
 tags: [tfswitch, terraform]
 categories: Devops
+description: '介绍如何用 tfswitch 命令行工具在不同项目间快速切换和管理 Terraform 版本，避免版本差异导致的兼容性问题。'
 ---
 ## 简介
 

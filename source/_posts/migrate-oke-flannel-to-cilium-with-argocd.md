@@ -4,6 +4,7 @@ date: 2026-07-21 10:56:00
 tags: [cilium, argocd, kubernetes, oke, gitops, flannel]
 categories: Devops
 cover: /images/cilium/oke-flannel-to-cilium-guide.png
+description: '记录用 ArgoCD ApplicationSet 把多个 OKE 集群的 CNI 从 Flannel 迁移到 Cilium 的实践，涵盖架构设计、配置拆解和实际踩过的坑。'
 ---
 
 网上关于「OKE 把 CNI 从 Flannel 换成 Cilium」的教程不少，比如 [Pratik Borkar 的这篇](https://blog.pratiknborkar.com/replace-flannel-with-cilium-on-oke) 和 [Oracle 官方的 Learn 教程](https://docs.oracle.com/en/learn/oke-flannel-to-cilium-cni-plugin/index.html)，写得都很扎实。但它们都是「站在一台笔记本前敲命令」的视角：`helm repo add`、手改一份几百行的 `cilium.yaml`、`helm install`，最后再手动 `kubectl delete daemonset kube-flannel-ds`——这一步在我们的场景里其实行不通（下面第 6 步会讲为什么）。

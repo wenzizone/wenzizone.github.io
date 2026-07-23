@@ -3,6 +3,7 @@ title: 使用Golang处理POST请求中的JSON数据
 date: 2023-10-30 19:38:49
 tags: ["golang", "json"]
 categories: ["开发","Golang"]
+description: '介绍在 Golang 中处理 POST 请求 JSON 数据的两种常用方法：json.Unmarshal 和 json.NewDecoder，附带具体代码示例。'
 ---
 
 在Golang中，我们经常需要处理来自POST请求的JSON数据。处理JSON数据有多种方法，本文将介绍两种常用的方法：使用json.NewDecoder和使用json.Unmarshal。

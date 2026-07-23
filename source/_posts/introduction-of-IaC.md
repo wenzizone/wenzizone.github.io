@@ -3,6 +3,7 @@ title: 什么是基础设施即代码（IaC）
 date: 2023-12-06 20:36:24
 tags: [IaC]
 categories: ["Devops","IaC"]
+description: '介绍基础设施即代码（IaC）的核心概念、声明式与命令式两种实现方式，以及它在降低成本、加快部署、减少人为错误方面的优势。'
 ---
 # 基础设施即代码简介
 基础设施即代码（IaC[Infrastructure as Code]）是通过代码而非手动流程来管理和置备基础设施的方法。

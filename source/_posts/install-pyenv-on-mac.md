@@ -3,6 +3,7 @@ title: Mac上pyenv的安装及使用
 date: 2023-11-30 14:00:00
 tags: [pyenv, mac, brew]
 categories: ["开发","python"]
+description: '介绍如何在 Mac 上用 Homebrew 安装 pyenv 并配置 zsh shell 环境，实现多版本 Python 的安装、切换和管理。'
 ---
 
 pyenv 是一个 Python 版本管理工具，可以让您在系统中轻松管理多个 Python 版本。通过 pyenv，您可以安装不同的 Python 版本，并针对特定项目或需求使用不同的 Python 版本。此外，pyenv 还可以管理全局 Python 版本和本地项目特定版本，让您能够更加灵活地管理 Python 环境。这可以帮助开发人员避免由于不同的项目需要不同版本的 Python 而引起的兼容性和依赖性问题。

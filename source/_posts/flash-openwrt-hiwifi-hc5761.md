@@ -3,6 +3,7 @@ title: 极路由hc5761刷openwrt
 date: 2024-01-20 14:00:00
 tags: [openwrt, 极路由, hc5761]
 categories: Devops
+description: '手把手教程：在 MacOS 下给极路由 HiWiFi HC5761 刷入 OpenWrt 固件，包含 root 路由器、开启 SSH、bread 模式刷机的完整步骤。'
 ---
 本篇进入主题，将按照以下步骤把极路由HC5761刷成opentwrt系统。
 1. root路由器，开启SSH

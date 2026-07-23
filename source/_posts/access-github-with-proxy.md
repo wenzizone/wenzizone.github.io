@@ -3,6 +3,7 @@ title: 给github配置代理
 date: 2023-10-23 08:12:10
 tags: [github, proxy]
 categories: Devops
+description: '记录如何为 Git 配置 HTTP/HTTPS 代理，包括查看当前代理配置、设置和取消代理的具体命令，解决访问 GitHub 速度慢的问题。'
 ---
 
 # 配置Git代理

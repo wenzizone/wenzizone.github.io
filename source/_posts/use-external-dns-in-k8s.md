@@ -3,6 +3,7 @@ title: 在 Kubernetes 中使用 External-DNS 管理域名
 date: 2024-2-06 20:47:23
 tags: [external-dns, dns, k8s, kubernetes]
 categories: Devops
+description: '介绍如何在 Kubernetes 集群中通过 Helm 安装并配置 External-DNS，实现 Service/Ingress 域名与 DNS 记录的自动同步。'
 ---
 
 ## 简介
