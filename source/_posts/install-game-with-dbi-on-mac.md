@@ -15,36 +15,36 @@ description: '介绍在 Mac 上不装虚拟机，通过安卓传输助手或 Com
 ## 安卓传输助手
 本章节主要介绍的是使用安卓传输助手给switch安装游戏。下载地址我会放到文章的最后。  
 点开安卓传输助手后显示如下图。这里表示我们还没有连接任何的设备  
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_13-08-43.png)  
+![安卓传输助手打开后提示未检测到安卓设备](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_13-08-43.png)  
 #### <a id="dbi">按照下面步骤打开switch上的dbi软件</a>
 1. 点开相册
 
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-50-07.webp)
+![Switch 主菜单，箭头指向"相册"图标](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-50-07.webp)
 
 2. 点选DBI
 
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-44-08.webp)
+![hbmenu 界面，箭头指向 DBI 图标](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-44-08.webp)
 
 #### 给switch安装游戏
 1. 运行MTP服务
 
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-57-55.webp)  
+![DBI 主菜单，箭头指向"运行 MTP 传输程序"](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-57-55.webp)  
 运行MTP服务后，会提示我们将switch和电脑连接上。
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/2023120613193100.webp)    
+![DBI 提示通过 USB Type-C 连接主机并等待倒计时](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/2023120613193100.webp)    
 我们根据提示将switch和电脑通过数据线连接上,之后显示如下
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/2023120613202300.webp)   
+![DBI 已连接主机，显示检测到的存档统计信息](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/2023120613202300.webp)   
 现在我们回到电脑上，看到安卓传说助手也连接上了。如图所示
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_15-09-10.webp)   
+![安卓传输助手连接成功，显示 Switch 相册文件列表](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_15-09-10.webp)   
 
 2. 开始安装游戏  
 
 接下来，如上图，点击"5：SD Card install"，进入到sd安装模式  
 然后我们只需要把我们想要安装的游戏的文件拖拽进来就会开始安装了。如图所示
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_13-17-46.webp)
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_13-18-33.webp)
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/2023120613260600.webp)
+![安卓传输助手窗口，箭头指向"5: SD Card install"标签](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_13-17-46.webp)
+![将游戏文件拖拽到 Switch 的 SD Card install 文件夹](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_13-18-33.webp)
+![游戏文件从电脑拷贝到 Switch 的进度条](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/2023120613260600.webp)
 随着耐心的等待。游戏顺利安装完毕。如图
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/2023120613265900.webp)
+![DBI 显示游戏安装完成的日志](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/2023120613265900.webp)
 接下来就可以享受游戏的快乐了
 
 ## commander one pro
@@ -53,24 +53,24 @@ description: '介绍在 Mac 上不装虚拟机，通过安卓传输助手或 Com
 本章节就来介绍使用commander one pro来给switch安装游戏  
 
 先来看一下commander one pro软件打开的样子  
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_13-28-50.webp)
+![Commander One Pro 双栏文件管理器初始界面](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_13-28-50.webp)
 接下来，让我们将switch和电脑连接上，并打开switch上的DBI软件。如果不知道如何打开DBI，方法可以参考[这里](#dbi)  
 #### 安装游戏
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_15-57-07.webp)  
+![Commander One Pro 连接 DBI 后进入 SD 安装模式的位置提示](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_15-57-07.webp)  
 如上图所示，进入sd安装模式  
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-11-27.webp)  
+![Commander One Pro 中选中游戏文件并点击 Copy 按钮](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-11-27.webp)  
 在左边选择想要安装的游戏，然后点击copy按钮  
 这里有两种方式，
 1. 使用队列
    
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-12-11.webp)
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-12-23.webp)
+![复制对话框中框出 Queue（队列）按钮](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-12-11.webp)
+![点击 Queue 后 macOS 显示游戏排队拷贝的进度](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-12-23.webp)
 使用队列的好处：如果安装的游戏比较大，你依然可以继续进行后续的操作，比如去找其他需要安装的游戏，然后放入队列。
 
 2. 不使用队列
  
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-12-56.webp)
-![](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-13-06.webp)
+![复制对话框中框出不使用队列、直接点 OK 的位置](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-12-56.webp)
+![不使用队列时，拷贝进度对话框直接阻塞在前台](https://cdn.jsdelivr.net/gh/wenzizone/wenzizone.github.io@main/images/switch/Snipaste_2023-12-06_14-13-06.webp)
 不使用队列的坏处：如果安装的游戏比较大，我们就只能一直等待游戏安装完毕后，才能继续后面的动作
 
 到此本篇文章就结束了。祝愿大家游戏快乐

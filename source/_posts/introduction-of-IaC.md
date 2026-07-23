@@ -51,7 +51,7 @@ IaC 可以帮助您的企业管理 IT 基础架构需求，同时提高一致性
 - AWS CloudFormation
 
 但各个工具在使用范畴范围上也有所不同，如下图：
-![](https://image-static.segmentfault.com/898/767/898767109-6440ffad212c0_fix732)
+![不同 IaC 工具的使用范畴对比图](https://image-static.segmentfault.com/898/767/898767109-6440ffad212c0_fix732)
 
 # 为什么说 IaC 对于 DevOps 至关重要
 IaC 是实施 DevOps 实践和持续集成/持续交付（CI/CD）的一个重要组成部分。IaC 免除了开发人员的大部分置备工作，他们只需要执行一个脚本即可让基础架构准备就绪。  
