@@ -112,3 +112,5 @@ Sublime Text.4cff18d2bab96a93366319a9e0fa060d.dc715bc726b62806c2cb0a28eb2303bb.s
 3.12.0
 ```
 文件内容其实就是所用python对应的版本号
+
+如果你需要在不同项目之间创建相互隔离的虚拟环境，而不只是切换全局/局部的 Python 版本，可以参考下一篇：[使用pyenv-virtualenv管理python虚拟环境](https://www.wenzizone.com/202311/manage-python-virtual-environment-with-pyenv-virtualenv)

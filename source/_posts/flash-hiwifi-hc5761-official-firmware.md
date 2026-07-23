@@ -154,7 +154,7 @@ ll recovery.bin
 ```
 从上面的返回结果可以清楚的看到路由器的uuid了   
 
-到此，我们为了给极路由刷Openwrt的第一步做好了准备
+到此，我们为了给极路由刷Openwrt的第一步做好了准备，具体的 root 路由器、开启 SSH、刷入 OpenWrt 固件步骤见下一篇：[极路由hc5761刷openwrt](https://www.wenzizone.com/202401/flash-openwrt-hiwifi-hc5761)
 
 
 #### 额外步骤，关闭tftp server
