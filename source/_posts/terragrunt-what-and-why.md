@@ -1,6 +1,6 @@
 ---
 title: Terragrunt 是什么，为什么要用它——从一个最小例子开始
-date: 2026-07-23 09:00:00
+date: 2026-07-27 13:43:27
 tags: [terragrunt, terraform, iac]
 categories: Devops
 cover: /images/terragrunt/terragrunt-what-and-why.png
