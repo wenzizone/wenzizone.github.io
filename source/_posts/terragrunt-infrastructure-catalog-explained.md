@@ -1,6 +1,6 @@
 ---
 title: Terragrunt 的 Infrastructure-Catalog 模式：可复用基础设施怎么组织
-date: 2026-07-24 09:00:00
+date: 2026-08-03 09:57:52
 tags: [terragrunt, terraform, iac]
 categories: Devops
 cover: /images/terragrunt/terragrunt-infrastructure-catalog-explained.png
