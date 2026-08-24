@@ -1,6 +1,6 @@
 ---
 title: Terragrunt 三层 include：我们是怎么在 OKE 的 Terraform 配置里做到 DRY 的
-date: 2026-08-22 09:00:00
+date: 2026-08-24 14:15:00
 tags: [terragrunt, terraform, iac, oci, oke]
 categories: Devops
 cover: /images/terragrunt/terragrunt-dry-in-practice.png
