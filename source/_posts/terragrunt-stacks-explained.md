@@ -1,6 +1,6 @@
 ---
 title: Terragrunt Stacks 与 Infrastructure-Live：account/region 分层与自动依赖解析
-date: 2026-08-05 09:30:00
+date: 2026-08-17 09:30:00
 tags: [terragrunt, terraform, iac]
 categories: Devops
 cover: /images/terragrunt/terragrunt-stacks-explained.png
