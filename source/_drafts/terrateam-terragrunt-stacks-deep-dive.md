@@ -110,7 +110,7 @@ config_builder:
 
 ### 坑 1.3:就算版本对了,自带脚本也根本不认识 `.stack.hcl`
 
-版本问题解决之后,build-config 这一步终于顺利跑完,依赖图也正确生成了。但翻遍整个执行日志,**从头到尾没有一行提到 `terragrunt.stack.hcl`**。脚本的逻辑就是扫描普通 `terragrunt.hcl` 文件、解析 `include`/`dependency` 块算依赖关系——跟 Stack 完全是两回事。它甚至把我们 `catalog/units/` 下面的可复用单元也当成独立 dirspace 报了出来,直接触发了我们专门配置过要抑制的一类 bug(见下一章)。
+版本问题解决之后,build-config 这一步终于顺利跑完,依赖图也正确生成了。但翻遍整个执行日志,**从头到尾没有一行提到 `terragrunt.stack.hcl` 这个文件**。脚本的逻辑就是扫描普通 `terragrunt.hcl` 文件、解析 `include`/`dependency` 块算依赖关系——跟 Stack 完全是两回事。它甚至把我们 `catalog/units/` 下面的可复用单元也当成独立 dirspace 报了出来,直接触发了我们专门配置过要抑制的一类 bug(见下一章)。
 
 ### 坑 1.4:自带脚本的输出,合并逻辑是无差别 union,不认识我们手写的抑制规则
 
