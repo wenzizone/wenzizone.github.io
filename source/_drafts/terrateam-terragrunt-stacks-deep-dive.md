@@ -3,6 +3,7 @@ title: 在 Terrateam 上跑通 Terragrunt Stacks：一次从「完全不行」�
 date: 2026-08-31 10:00:00
 tags: [terrateam, terragrunt, ci-cd]
 categories: Devops
+cover: /images/terragrunt/terrateam-terragrunt-stacks-deep-dive.png
 description: '一次真实的 Terrateam + Terragrunt Stacks CI 集成调试全过程:从官方 config_builder 的死路,到找到 tree_builder 这个冷门开关,再到五个连环坑,最终换来的只是一份"能用但不放心"的配置方案。'
 ---
 
