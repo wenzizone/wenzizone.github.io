@@ -9,6 +9,8 @@ description: '一次真实的 Terrateam + Terragrunt Stacks CI 集成调试全�
 
 **写在前面**:这不是一篇官方文档的转述,是一次真实的、边打边退边进的调试记录。结论会在文章的最后给出,但我更想把中间踩过的每一个坑原样写下来——因为这些坑大多数**没有任何文档提到**,靠的是直接读 Terrateam 的 OCaml 源码、盯着 GitHub Actions 的原始日志一行行抠、以及若干次"看起来应该好了但其实还没有"的假阳性。如果你也在搞 Terragrunt 单体仓库(monorepo)+ Terrateam,大概率会撞上这里面的某一个坑,希望能帮你少走几步。
 
+![在 Terrateam 上跑通 Terragrunt Stacks：一次从「完全不行」到「能跑但不放心」的踩坑实录](/images/terragrunt/terrateam-terragrunt-stacks-deep-dive.png)
+
 ---
 
 ## TL;DR
