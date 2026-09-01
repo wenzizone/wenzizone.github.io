@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.wenzizone.com/202608/terrateam-terragrunt-stacks-deep-dive</loc>
+    
+    <lastmod>2026-09-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.wenzizone.com/202608/terragrunt-stacks-explained</loc>
     
     <lastmod>2026-08-24</lastmod>
@@ -184,7 +193,7 @@
 
   <url>
     <loc>https://www.wenzizone.com/</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
