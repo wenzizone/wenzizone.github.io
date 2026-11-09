@@ -38,8 +38,8 @@ categories: Devops
   - 每个业务线一个 AppProject（如 prod-dsp、qa-adx）。
 - **通用 chart（实际是“一套模板，逐步分叉”）**：最初的通用 chart 用开关控制 Deployment / Rollout / Ingress / HTTPRoute / HPA / ExternalSecret；后来各业务线各自分叉出自己的 chart，目前只有最早的那个业务目录直接使用通用 chart。**每个集群一个 values 文件**表达差异。详见第 7 节。
 - **发布流水线（自研，不用 Image Updater）**：
-  CI 构建镜像 → Argo Workflows 的通用部署模板 → 查 `deployment-mapping.yaml` 定位 appset → `yq` 修改 `image.tag` → 开分支、自动提 PR 并**开启自动合并**（`gh pr merge --auto`，是否需要人工 review 取决于分支保护规则，待作者确认）→ ArgoCD 同步。appset 里还带 `ticket` 参数，把发布与工单关联。
-- **同步策略并非一刀切**：生产 48 个 appset 中，32 个 `prune/selfHeal` 全关，16 个全开；qa 是 30 关 / 18 开。addon 类 29 个 appset 里 25 个全开。全开与全关各自对应哪类服务、为什么这么分，**需要作者补充理由**（第 6 篇的核心）。所有业务 appset 都忽略 `replicas`（给 HPA 让路），并统一启用 `ApplyOutOfSyncOnly`、`RespectIgnoreDifferences`。
+  CI 构建镜像 → Argo Workflows 的通用部署模板 → 查 `deployment-mapping.yaml` 定位 appset → `yq` 修改 `image.tag` → 开分支、自动提 PR 并**开启自动合并**（`gh pr merge --auto`）→ ArgoCD 同步。**PR 不需要人工 review**（作者确认）：流程本身已定义好，并设计了快速回滚方案作为兜底（见 7.7）。appset 里还带 `ticket` 参数，把发布与工单关联。
+- **同步策略并非一刀切**：生产 48 个 appset 中，32 个 `prune/selfHeal` 全关，16 个全开；qa 是 30 关 / 18 开。addon 类 29 个 appset 里 25 个全开。**注意：全关不等于关掉自动同步**——这些 appset 的 `automated` 块都在，只是 `prune: false`、`selfHeal: false`，Git 变更仍会自动落地，只是不自动删资源、不自动纠偏。第 6 篇的写法见 6.4。所有业务 appset 都忽略 `replicas`（给 HPA 让路），并统一启用 `ApplyOutOfSyncOnly`、`RespectIgnoreDifferences`。
 - **Secret**：external-secrets 从 Vault 同步，按环境选 ClusterSecretStore，`refreshInterval` 为 10s；Secret 不进 Git。
 - **渐进式发布**：通用 chart 里 `canary.enabled` 开关；Rollout 用 `workloadRef` 引用已有 Deployment；支持 Gateway API 或 nginx 做流量切分；steps 为 1% → 10% → 50%，每步手动 pause。**仅个别服务启用**。
 - **变更管理**：apps 仓库里用 openspec 管理较大的变更。
@@ -51,10 +51,10 @@ categories: Devops
 |---|---|---|---|
 | 1 | 全景：我们的 ArgoCD 如何管多个集群 | GitOps 是什么；ArgoCD 架构 | 单控制面管多集群的整体图；两个仓库分工；一次发布的完整旅程概览 |
 | 2 | App-of-Apps：入口 Application + 每服务一个 ApplicationSet | Application / ApplicationSet 概念 | `init-*` 入口；目录结构；新增一个服务要改哪些文件 |
-| 3 | 通用 Helm Chart 的设计与演进 | Helm values 分层 | 开关式设计；每集群一个 values 的差异点；为什么后来各业务线分叉出自己的 chart（取舍与代价） |
+| 3 | Helm Chart 怎么管：chart 随代码、按 tag 发布、不可变（以目标形态为结论） | Helm values 分层；chart 与代码是否同仓 | 结论先行：chart 与项目同仓、变动视为上线、生产按 tag 发版；再交代“我们目前是短平快做法（独立 chart 仓库、跟随 dev 分支）”及其代价；开关式设计、每集群一个 values、分叉的取舍作为补充（见 7.2） |
 | 4 | 多集群多区域：list generator 怎么表达 | generator 种类对比 | 一个 appset 覆盖多个集群；为什么用 list 而不是 cluster/matrix |
-| 5 | 发布流水线：Argo Workflows 自动提 PR 改 image.tag | Argo Events / Workflows 简介 | 通用部署模板全流程；mapping 文件；为什么走 PR 而不是 Image Updater |
-| 6 | 生产同步策略：为什么 prune / selfHeal 都关 | 同步策略各选项含义 | `ignoreDifferences` 与 HPA；各 syncOptions 的取舍 |
+| 5 | 发布流水线：Argo Workflows 自动提 PR 改 image.tag | Argo Events / Workflows 简介；Image Updater 是什么 | 通用部署模板全流程；mapping 文件；沿用 Jenkins 流式结构又兼顾 GitOps：推式流水线与拉式 GitOps 的折中（对比 Image Updater） |
+| 6 | 同步策略：prune / selfHeal 到底是什么 | automated / prune / selfHeal 各自含义，三者关系 | 实际案例：selfHeal 与 HPA 的冲突（ignoreDifferences）、prune 的两面、入口 Application 的配置效果、升级窗口临时关 prune；不追究本环境为何这样设置 |
 | 7 | Secret：External Secrets + Vault | Secret 不进 Git 的几种方案对比 | ExternalSecret 写法；ClusterSecretStore；10s 刷新的取舍 |
 | 8 | Argo Rollouts：workloadRef + 金丝雀 | 金丝雀 vs 蓝绿 | chart 里 canary 开关；Gateway API 流量切分；为什么只给个别服务上 |
 | 9 | AppProject 与权限划分 | Project / RBAC 概念 | 业务线 × 环境的 Project 切分；白名单的取舍 |
@@ -70,7 +70,8 @@ categories: Devops
 - mapping 中个别条目的 key 与 appfile 文件名不对应，需要核对。
 - AppProject 的 `sourceRepos` 与资源白名单为 `*`，权限边界偏宽。
 - 单套 ArgoCD 管全部集群，存在单点与爆炸半径问题。
-- 通用 chart 分叉后，改一处要在多个 chart 里同步；分叉版本之间已出现功能差异（有的带 Rollout 模板，有的没有）。
+- 通用 chart 分叉后，改一处要在多个 chart 里同步；分叉版本之间已出现功能差异（只有两个 chart 带 Rollout 模板）。作者态度：开发人员自己能接受分叉带来的不便即可，第 10 篇可以不当作不足来写。
+- chart 来源的 `targetRevision` 跟随主干分支而非 tag，chart 变动未被当作上线（第 3 篇已按“现状 vs 目标”交代，第 10 篇可呼应，是否公开由作者定）。
 - ArgoCD 的 wrapper chart 声明依赖版本与仓库里打包的依赖版本不一致，实际渲染取决于是否执行过依赖更新。
 - 通用 chart 里有个默认值写死了某个服务的实例名（反亲和性），换服务时容易漏改。
 
@@ -115,6 +116,42 @@ categories: Devops
 | `Force=true` | 仅 kube-proxy-patch（与 SSA 同用） |
 | `ignoreDifferences` 忽略 `/spec/replicas` | 95 个 appset 一字不差地重复同一段（Deployment + Rollout） |
 | `retry` | 仅 1 个 appset 配置 |
+
+**第 6 篇的写法（作者决定：不追究本环境为什么这样设置，只讲清概念 + 给实际案例）**：
+
+- **目标**：把 `automated`、`prune`、`selfHeal` 三者讲清楚，尤其是“开自动同步 ≠ 开 prune / selfHeal”。
+  - `automated`：Git 变了就自动 sync。
+  - `prune`：Git 里删掉的资源，集群里也跟着删。
+  - `selfHeal`：集群被手动改了，自动改回 Git 的样子。
+- **本环境的事实（只陈述现状，不解释原因）**：
+  - 业务 appset：`automated` 都在，prod 32 个 `prune/selfHeal` 全关、16 个全开；全关的集中在 dsp / box / adx / website 等业务线，全开的是 data 管道类与 ds 策略类。
+  - addon：29 个里 25 个全开。
+  - 入口 `init-*` Application：只开 `selfHeal`，不开 `prune`。
+- **实际案例候选**（真实 vs 示意分开标注，发布前核对脱敏）：
+  1. **selfHeal 与 HPA 的冲突（真实）**：HPA 改了副本数，selfHeal 会把它改回 Git 里的值；所以 95 个业务 appset 都配了忽略 `/spec/replicas` 的 `ignoreDifferences`，并开 `RespectIgnoreDifferences`。可配 HPA 的扩缩容参数一起讲。
+  2. **prune 的两面（示意）**：好处是 Git 删除即下线，不留孤儿资源；风险是改名、拆分文件、误删 YAML 时会连带删除线上资源。可举“重命名一个 Deployment 的 values”这类常见操作。
+  3. **入口 Application 只开 selfHeal 不开 prune（真实现状，效果说明）**：不开 prune 意味着删掉某个 appset 文件，不会级联删掉它管理的服务，需要人工确认；这是“效果”，不是作者当时的决策理由，写的时候别说成动机。
+  4. **升级窗口临时关闭 prune（示意）**：做会改 API 版本或资源名的升级（如 CRD、apiVersion 迁移）时，先关 prune 再升级，最后恢复；可用 ExternalSecret `v1beta1 → v1` 作为讲解例子，但**不要说成本环境当时的做法**。
+  5. **ApplyOutOfSyncOnly（真实）**：prod/qa 全部开启，只对有差异的资源 apply，减少大 appset 的同步压力。
+- **主体结构：什么时候关、什么时候不用关**（依据 ArgoCD 机制整理，未联网核实，发布前对照官方文档核对）：
+  - **先分清风险性质**：`prune` 是“删除”风险（可能不可逆）；`selfHeal` 是“覆盖”风险（可能与别的控制器抢着改）。两个开关分开判断，不必同开同关。
+  - **prune 建议关**：
+    - 有状态或删了难恢复的资源（PVC/PV、数据库 CR、Namespace、Secret/ExternalSecret）；Git revert 能恢复资源定义，恢复不了数据。
+    - Git 结构经常重构（重命名资源、拆 chart、改 label selector）：旧名字会被当成“已删除”，连带删掉线上资源再重建，中间有中断。
+    - 升级窗口（apiVersion、CRD 大版本、chart 大版本）：先关再升，升完恢复。
+    - App-of-Apps 入口 Application：prune 会级联删除子 Application，进而删掉它管的全部服务。
+  - **prune 不用关**：无状态、可重建、改动稳定的资源（Deployment、Service、ConfigMap）；qa 等希望保持干净、不留孤儿资源的环境；模板稳定生成、很少重命名的基础组件。
+  - **selfHeal 建议关**：
+    - 别的控制器也在改同一字段又没配 `ignoreDifferences`（HPA 改 `replicas`、Rollouts 改 HTTPRoute 流量权重、mutating webhook 注入字段），会“同步打架”。
+    - 需要线上应急手改（紧急扩容、临时改环境变量、`kubectl edit` 排障），selfHeal 会很快改回去。
+  - **selfHeal 不用关**：资源没有其他控制器改它；环境要求“禁止手改，一切以 Git 为准”，需要自动纠偏；基础组件（addon 类）。
+  - **四条经验**：
+    1. 先想 `ignoreDifferences`，再想关 selfHeal；与 HPA、Rollouts 打架通常忽略那几个字段即可，不必整个关。
+    2. prune 可以保护单个资源：注解 `argocd.argoproj.io/sync-options: Prune=false`，其余资源照常开 prune，比整个 appset 关闭更细。
+    3. 想完全人工控制，就去掉 `automated`：ArgoCD 只检测、不自动同步，与“关 prune/selfHeal”是两种不同强度。
+    4. 临时关的要有恢复动作：升级前关、升完立刻恢复，并在提交信息里写原因，避免“临时开关”变成永久默认。
+  - 案例 1（HPA）对应“selfHeal 建议关”的第一条；案例 4（升级窗口）对应“prune 建议关”的第三条；案例 3（入口 Application）对应第四条。
+- **不写**：各 appset 具体何时、为何被关；git 历史里的提交考证。
 
 **可写的点**：
 - 为什么业务 appset 不开 SSA，而 addon（CRD 多、体积大）要开。
@@ -188,7 +225,29 @@ categories: Devops
 | 前后端 dashboard 类 | 6–17 | 各自独立 chart |
 
 - 分叉版本之间已有差异，例如有的没有 Rollout 模板，有的多了一个 Cilium Envoy 配置模板。
-- 文章角度：为什么没有做成 library chart / 子 chart 依赖？分叉让每个业务线可以独立演进，代价是改通用逻辑要多处同步。这比“一个 chart 打天下”更真实，也更有讨论价值。
+- **核实（2026-11 对照仓库）**：helm 仓库共 68 个 chart，prod 的 48 个业务 appset 实际引用约 26 个不同 chart 路径。业务 chart 基本是通用 chart（`dsp/dsp`）的**裁剪副本**：`deployment.yaml` 差异仅 6–44 行（通用版 75 行）；`hpa.yaml` 多数是 32–36 行的简化版（通用版 84 行，含 QPS 指标 + CPU + 扩缩容行为）；模板文件比通用版少 2–5 个。**只有 `dsp/dsp` 与 `inference-web` 两个 chart 带 Rollout 模板**，金丝雀能力只在这两处。dsp-services-bid 用 `dsp/dsp`，其余 6 个 dsp 服务用自己的副本。分叉是“裁剪骨架”，不是各自长出新功能。
+- **现状（短平快）**：chart 放在独立的 helm 仓库；prod 的 48 个业务 appset，chart 来源的 `targetRevision` **全部是 `dev` 分支**，即跟随 dev 最新提交，chart 版本没有固定；镜像 tag 固定（`prod_<sha7>`），chart 不固定。后果：合并到 dev 的 chart / values 改动，下次同步就会进 prod，chart 变动没有被当作“上线”。
+
+### 7.2.1 第 3 篇的写法：以目标形态为结论（作者决定）
+
+**作者原话要点**：服务小，所以 chart 暂时独立成一个仓库；实际上 chart 应该与项目放在一起，成为代码的一部分，chart 的变动也应视为上线；生产发版要打 tag，按 tag 生成镜像，ArgoCD 用 tag 名找到对应的 chart，tag 不可变，别人改不了；至于分叉，只要开发人员自己能接受由此带来的不便就可以。
+
+**读者要拿走的结论**：
+- chart 与应用代码同仓，随代码一起评审、一起版本化。
+- chart 变动 = 上线，走与代码相同的发布流程。
+- 生产发版 = 打 tag → 按 tag 构建镜像 → ArgoCD 的 `targetRevision` 指向同一个 tag 下的 chart；tag 不可变，发布内容可复现、可回滚、可审计。
+- 通用 chart 与分叉：不强求统一，由团队自己权衡维护成本，能接受就行。
+
+**行文结构建议**：
+1. 先给结论与理由（为什么 chart 要随代码、为什么要 tag 不可变）。
+2. 再讲“我们目前是短平快做法，不是最佳实践”：独立 chart 仓库 + `targetRevision: dev`，说明这是服务规模小时的权宜选择，并如实写出代价（chart 改动不经过发布流程、版本不固定）。
+3. 补充：开关式通用 chart 的设计、每集群一个 values 文件、分叉的取舍（裁剪式分叉，代价是通用逻辑要多处同步）。
+4. 与第 5 篇衔接：发布流水线现在只改 `image.tag`；目标形态下需要同时固定 chart 的 tag，可预告。
+
+**写作注意**：
+- 现状与目标要分清，不要把目标形态写成“我们已经这样做了”。
+- 技术细节（`targetRevision` 指向 tag、tag 保护规则）发布前对照 ArgoCD 与 GitHub 文档核对。
+- 现状里的 `dev` 分支等细节脱敏后写成“跟随主干分支”。
 
 ### 7.3 同一服务在不同集群的 values 差异（第 3、4 篇素材）
 
@@ -247,9 +306,18 @@ GitHub 事件 → Argo Events（EventSource + Sensor）
 → （开启金丝雀的服务）Rollouts 按 steps 逐步放量，等待人工 promote
 ```
 
+- **PR 免人工 review 与回滚（作者确认）**：流程已定义好，所以自动合并不需要人审，靠快速回滚兜底。此前的发布方式是 **Jira ticket 触发 deploy**，ticket 里写明**新版本号和回滚版本号**，可在 Jira 上自助操作回滚；appset 里的 `ticket` 参数正是这条链路的延续。
+  - **回滚走同一条流水线（作者确认）**：把 `image.tag` 改回回滚版本号，再提 PR 自动合并，与正常发布完全同一条路径，没有单独的回滚通道。好处是回滚也有 PR 记录、同样带 `ticket`，操作路径只有一条。
+  - 待确认：“此前”具体指哪个阶段/环境，写文章时要说清。
+  - 文章角度：PR 在这里是**审计记录**而不是**审批关卡**；“敢不审”的依据是回滚路径明确、人人可操作。
 - 通用部署模板：根据 `deployment-mapping.yaml` 找到 appset 文件；**若当前 tag 与新 tag 相同则直接跳过**（防止空提交）；分支名由“服务名 + tag”确定；整个步骤失败自动重试 3 次（指数退避）。
 - 工作流模板共 90 个，按业务线分目录；`workflow-autogen` 用 gomplate 根据 vars 文件批量生成各服务的模板，改完 vars 要手动 `make` 并提交生成物。
-- 文章角度：为什么自研而不是用 Image Updater？（CI 已经有 Argo Workflows；需要 PR 作为变更记录；一个模板服务所有业务。具体理由请作者补充。）
+- 文章角度：为什么自研而不是用 Image Updater？
+  - **作者给出的核心理由**：整套设计沿用了 Jenkins 的“流式结构”（构建 → 部署 → 验证，线性流水线、发布是一个有起终点的事件），同时兼顾 GitOps 标准——部署动作不是流水线直接 apply，而是把期望状态写回 Git（PR），再由 ArgoCD 拉取同步。
+  - **文章主线**：“推式流水线 vs 拉式 GitOps 的折中”。Image Updater 是纯 GitOps 思路（无发布事件，只有状态收敛）；这里保留发布事件的概念，团队从 Jenkins 迁移几乎没有认知成本，同时 Git 仍是唯一真相。
+  - **好处**：每次发布都有明确触发、PR 记录、工单关联（`ticket` 参数）；事件驱动而非轮询。
+  - **代价**：多一层要维护（mapping 文件、90 个工作流模板）；“发布完成”被拆成两段（PR 合并 / ArgoCD 同步完成）。与第 5 节复盘观察呼应。
+  - **辅助对比点（推断，写前需核实 Image Updater 当前版本）**：tag 为 `prod_<sha7>`，semver 策略用不上；Image Updater 的 git write-back 默认直接提交而不开 PR；按 Application 注解配置，与 ApplicationSet 模板配合较别扭。
 
 ### 7.8 日常变更长什么样（第 10 篇素材）
 
@@ -263,13 +331,16 @@ GitHub 事件 → Argo Events（EventSource + Sensor）
 
 - [ ] **mapping 与文件不一致**（已核实）：qa 有 1 个 key 指向不存在的文件；prod 有 1 个 key 指向不存在的文件；qa、prod 各有约 4 个 appset 没有被 mapping 引用。第 10 篇可作为“手工维护的代价”。
 - [ ] **Project 的 destinations 疑似不覆盖**：prod 的 data 业务线有一个 appset 的部分目标集群，未出现在对应 Project 的 destinations 里（按字符串精确匹配）。需要在 ArgoCD 里确认是否真的被拒绝同步，或另有生效的配置，**确认前不要写进文章**。
-- [ ] 全开 / 全关的分组依据，请作者补充。
+- [x] 全开 / 全关：作者决定不再追究本环境为何这样设置，第 6 篇只讲概念 + 实际案例（见 6.4）。
+- [x] 回滚走同一条流水线（改回 tag + 提 PR），作者已确认（见 7.7）。
+- [ ] 确认“此前 Jira ticket 流程”的所指。
 
 ## 9. TODO（接力用）
 
 - [x] 补充 apps 仓库素材（第 6 节）。
 - [x] 补充 chart 仓库素材（第 7 节）。
-- [ ] 作者补充理由：prune/selfHeal 全开 vs 全关的分组依据；为什么自研发布流水线而不是 Image Updater；PR 是否真的无需人工 review。
+- [x] 作者已补充：为什么自研发布流水线而不是 Image Updater（见 7.7，沿用 Jenkins 流式结构 + 兼顾 GitOps）。
+- [x] 作者已补充：PR 无需人工 review，靠 Jira ticket 的回滚版本号快速回滚（见 7.7）。
 - [ ] 作者决定哪些“不足”公开（第 5 节）。
 - [ ] 作者确认提纲顺序与取舍。
 - [ ] 起草第 1 篇。
